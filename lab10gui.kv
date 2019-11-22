@@ -1,0 +1,102 @@
+#:kivy 1.11.1
+<MainWindow>:
+    name: "main"
+
+
+    FloatLayout:
+        cols:1
+        
+        FloatLayout:
+            size: root.width, root.height/2
+
+            Button:
+                text:"Vendors"
+                size_hint:0.3,0.1
+                pos_hint: {"x":0.1, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
+                on_release:
+                    root.manager.transition.direction = "left"
+                    root.vendor()
+            
+<VendorWindow>:
+    name: "vendor"
+    FloatLayout:
+        cols:1
+        
+        FloatLayout:
+            size: root.width, root.height/2
+            
+            Button:
+                text:"Add Vendor"
+                size_hint: 0.8,0.2
+                pos_hint: {"x":0, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
+            
+            Button:
+                text:"Delete a Vendor"
+                size_hint: 0.8,0.2
+                pos_hint: {"x":0, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
+
+
+<ProductWindow>:
+    name: "product"
+    FloatLayout:
+        cols:1
+        
+        FloatLayout:
+            size: root.width, root.height/2
+
+            Button:
+                text:"Add Product"
+                size_hint: 0.8,0.2
+                pos_hint: {"x":0, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
+            
+            Button:
+                text:"Delete a Product"
+                size_hint: 0.8,0.2
+                pos_hint: {"x":0, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
+
+
+<OrderWindow>:
+    name: "orders"
+    
+    FloatLayout:
+        cols:1
+        
+        FloatLayout:
+            size: root.width, root.height/2
+            
+            Button:
+                text:"Add an Order"
+                size_hint: 0.8,0.2
+                pos_hint: {"x":0, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
+            
+            Button:
+                text:"Delete an Order"
+                size_hint: 0.8,0.2
+                pos_hint: {"x":0, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
+
+<LineWindow>:
+    name: "line"
+    FloatLayout:
+        cols:1
+        
+        FloatLayout:
+            size: root.width, root.height/2
+            
+            Button:
+                text:"Add a Line"
+                size_hint: 0.8,0.2
+                pos_hint: {"x":0, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
+            
+            Button:
+                text:"Delete a Line"
+                size_hint: 0.8,0.2
+                pos_hint: {"x":0, "top":1}
+                font_size: (root.width**2 + root.height**2) / 18**4
