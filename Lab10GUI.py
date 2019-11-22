@@ -11,6 +11,7 @@ kivy.require("1.11.1")
 
 #dao.search_table("vendor", "vendor_name", "Hulkey Fasteners")
 
+
 class MainWindow(Screen):
     n = ObjectProperty(None)
     current = "main"
